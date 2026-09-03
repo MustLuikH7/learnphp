@@ -1,16 +1,11 @@
 <?php
-$test = 10;
-$test = 10 + 10;
-$test = 10 - 9;
-$test = 10 / 1;
-$test = 10 * 1;
-$test = $test / 1;
-$test += 3;
-$test *= 3;
-
-$a = 1;
-$b = $a++;
-var_dump($a);
-$test = sin(pi());
+$test = 'yolo';
+$test = 'yolo'. 'life';
+$name = 'matu';
+$age = 12;
+$test = $name. 'is kuul '. $age;
+$test = 'don\'t';
+$test = "lol\nlol\nlol";
 var_dump($test);
+
 ?>
