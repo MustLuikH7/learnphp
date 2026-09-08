@@ -1,11 +1,14 @@
 <?php
-$test = 'yolo';
-$test = 'yolo'. 'life';
-$name = 'matu';
-$age = 12;
-$test = $name. 'is kuul '. $age;
-$test = 'don\'t';
-$test = "lol\nlol\nlol";
-var_dump($test);
+$test = true;
+$test = false;
+$test = true && false;
+$test = true || false;
+$test = !true;
+$test = (true && false) || false || (true && !false);
+$test = true xor false;
+$test = true and false;
+$test = true or false;
 
+
+var_dump($test)
 ?>
