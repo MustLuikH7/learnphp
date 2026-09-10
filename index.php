@@ -1,30 +1,20 @@
 <?php
-function hello(): void {
-    var_dump('hello');
-}
-var_dump( hello());
+$test  = function(){
+    var_dump('shhh');
+};
 
-function helloName($name = 'nameless', $age = 10){
-    var_dump($name, $age);
-}
-helloName('kaspar, 50');
+var_dump($test);
+$test();
+call_user_func($test);
+
+$numbers = [1, 2, 3, 4, 5];
+
+$squares = array_map(function ($n){
+    return $n*$n;
+}, $numbers);
+var_dump($squares);
 
 
-function squaree(int $a): int{
-    if($a<0){
-        return 0;
-    }
-    return $a * $a;
-
-}
-$asnwer = squaree(3);
-var_dump($asnwer);
-
-function recursion($i){
-    if($i<10){
-        var_dump($i);
-        recursion(++$i);
-    }
-}
-recursion(3)
+$squares = array_map(fn ($n) => $n*$n, $numbers);
+var_dump($squares)
 ?>
