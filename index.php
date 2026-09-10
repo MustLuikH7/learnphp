@@ -1,30 +1,30 @@
 <?php
-for($i = 0; $i<10; $i++){
-    var_dump($i);
+function hello(): void {
+    var_dump('hello');
 }
-for($i = 2; $i < 1000000; $i*=2){
-    var_dump($i);
+var_dump( hello());
+
+function helloName($name = 'nameless', $age = 10){
+    var_dump($name, $age);
 }
+helloName('kaspar, 50');
 
-$time = time();
-$i = 0;
-while(time() < $time+1){
-    var_dump($i++);
+
+function squaree(int $a): int{
+    if($a<0){
+        return 0;
+    }
+    return $a * $a;
+
 }
+$asnwer = squaree(3);
+var_dump($asnwer);
 
-while(false){
-    var_dump('wail');
+function recursion($i){
+    if($i<10){
+        var_dump($i);
+        recursion(++$i);
+    }
 }
-do{
-    var_dump('do');
-}while(false);
-
-// for(;;){
-
-// }
-
-$fruits = ['apple', 'banana', 'cherry'];
-foreach($fruits as $key=>$fruit){
-    var_dump($key, $fruit);
-}
+recursion(3)
 ?>
