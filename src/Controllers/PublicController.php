@@ -66,6 +66,31 @@ class PublicController
         ];
         view('us', compact('title', 'posts'));
     }
+    public function tech()
+    {
+        $title = 'Technology';
+        $posts = [
+            [
+                'title' => 'PHP 8.4 property hooks',
+                'date' => 'October 1, 2026',
+                'author' => 'Martin',
+                'body' => 'Property hooks let you define get and set logic directly on class properties.',
+            ],
+            [
+                'title' => 'Building a simple router in PHP',
+                'date' => 'October 3, 2026',
+                'author' => 'Martin',
+                'body' => 'A router maps a URL path to a controller method, so every page has one entry point.',
+            ],
+            [
+                'title' => 'Why use Git for every project',
+                'date' => 'October 5, 2026',
+                'author' => 'Martin',
+                'body' => 'Version control keeps a history of changes and makes it easy to share code.',
+            ],
+        ];
+        view('tech', compact('title', 'posts'));
+    }
     public function test()
     {
         $db = new App\DB();
