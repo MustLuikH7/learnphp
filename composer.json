@@ -1,0 +1,17 @@
+{
+    "name": "mustluikh7/learnphp",
+    "type": "project",
+    "license": "WTFPL",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MustLuikH7",
+            "email": "mokamartin3@gmail.com"
+        }
+    ],
+    "require": {}
+}
